@@ -1,62 +1,86 @@
-# Complaint & Feedback Management System — Prototype
+# Complaint and Feedback Management System
 
-Demo/prototype implementation of **Problem 5** (Complaint & Feedback Management System) built with Flutter. Both apps run **fully offline** with seeded in-memory data — no backend or network required.
+## Project Overview
 
-## Apps
+The Complaint and Feedback Management System is a modern cross-platform application developed to streamline the process of submitting, managing, and responding to user complaints and feedback efficiently.
 
-- `mobile/` — Flutter user app (submit complaints, comment, track status, notifications)
-- `admin/` — Flutter admin app (dashboard, triage, status updates, categories, users)
+The system provides separate interfaces for users and administrators, enabling smooth communication, complaint tracking, status updates, and management operations in a user-friendly environment.
 
-## Demo credentials
+---
 
-Mobile app:
-- `user@example.com` / `user123`
-- `admin@example.com` / `admin123`
+## Features
 
-Admin app:
-- `admin@example.com` / `admin123`
-- `daniel@example.com` / `staff123` (staff role)
+### User Side
+- User registration and login
+- Submit complaints and feedback
+- View complaint status
+- Receive notifications and updates
+- User profile management
 
-Anyone can register a new user inside the mobile app; the new account lives only in memory for the current run.
+### Admin Side
+- Secure admin dashboard
+- View all submitted complaints
+- Accept or reject complaints
+- Manage users and complaint records
+- Monitor complaint activities
 
-## Seeded data
+---
 
-- 6 categories (Infrastructure, Sanitation, Academic, IT Services, Security, Other)
-- Several complaints across statuses (`pending`, `in_progress`, `resolved`, `rejected`) for the admin dashboard
-- Notifications
+## Technologies Used
 
-Each app is independent — data is **not shared** between the mobile and admin builds; each holds its own simulated store.
+### Frontend
+- Flutter
+- Dart
 
-## Run
+### Backend
+- Python
+- FastAPI
 
-Both apps share the same commands:
+### Tools & Services
+- Git & GitHub
+- Ngrok
+- Chrome Web Support
+- Android Emulator / Physical Android Device
 
-```bash
-cd mobile   # or: cd admin
+---
+
+## Project Structure
+
+Complaint-and-Feedback-Management-System/
+│
+├── admin/
+├── backend/
+├── mobile/
+│
+└── README.md
+
+System Architecture
+
+The project follows a client-server architecture:
+
+Mobile application for end users
+Web-based admin panel for administrators
+Backend API service for handling requests and communication
+
+Installation & Setup
+Clone the Repository:
+git clone https://github.com/jasoncs38/Complaint-and-Feedback-Management-System-.git
+
+Backend Setup
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+Mobile App Setup
+cd mobile
 flutter pub get
 flutter run
-```
 
-Requires Flutter ≥ 3.19, Dart ≥ 3.3.
+Admin Panel Setup
+cd admin
+flutter pub get
+flutter run -d chrome
 
-## Features implemented
+License
 
-User (mobile):
-- Login / register / logout
-- Submit complaint (title, description, category, location, priority, optional photo attachment)
-- View my complaints, filter by status
-- Complaint detail, comment thread, delete
-- Notifications
-
-Admin:
-- Login (admin / staff)
-- Dashboard with totals, status breakdown, by-category pie chart
-- Complaint list with search & filters
-- Update status, priority and admin response
-- Comment on complaints
-- Manage categories
-- View users
-
-## Notes
-
-This is a UI/UX prototype. The original FastAPI backend has been removed; both apps now use a mock `ApiClient` (see `lib/core/api_client.dart` in each app) that mimics the previous REST surface so the rest of the code (providers, screens, models) is unchanged from a real client/server build.
+This project was developed for educational and academic purposes.
