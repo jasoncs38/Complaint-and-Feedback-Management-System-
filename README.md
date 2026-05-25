@@ -61,33 +61,43 @@ Complaint-and-Feedback-Management-System/
 
 └── README.md
 
-System Architecture
+## System Architecture
 
-The project follows a client-server architecture:
+## The project follows a client-server architecture:
 
 Mobile application for end users
+
 Web-based admin panel for administrators
+
 Backend API service for handling requests and communication
 
-Installation & Setup
+## Installation & Setup
 Clone the Repository:
+
 git clone https://github.com/jasoncs38/Complaint-and-Feedback-Management-System-.git
 
-Backend Setup: 
+## Backend Setup: 
+
 cd backend 
+
 pip install -r requirements.txt 
+
 uvicorn main:app --reload 
 
-Mobile App Setup: 
+## Mobile App Setup: 
 cd mobile 
+
 flutter pub get 
+
 flutter run 
 
-Admin Panel Setup: 
+## Admin Panel Setup: 
 cd admin 
+
 flutter pub get 
+
 flutter run -d chrome 
 
-License
+## License
 
 This project was developed for educational and academic purposes.
