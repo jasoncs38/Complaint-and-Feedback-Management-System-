@@ -40,8 +40,8 @@ The system provides separate interfaces for users and administrators, enabling s
 
 ### Tools & Services
  Git & GitHub
- Ngrok
- Chrome Web Support
+ Ngrok    
+ Chrome Web Support    
  Android Emulator / Physical Android Device
 
 ---
