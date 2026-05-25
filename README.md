@@ -30,10 +30,12 @@ The system provides separate interfaces for users and administrators, enabling s
 
 ### Frontend
  Flutter
+ 
  Dart
 
 ### Backend
  Python
+ 
  FastAPI
 
 ### Tools & Services
@@ -48,10 +50,15 @@ The system provides separate interfaces for users and administrators, enabling s
 
 Complaint-and-Feedback-Management-System/
 │
+
 ├── admin/
+
 ├── backend/
+
 ├── mobile/
+
 │
+
 └── README.md
 
 System Architecture
@@ -61,26 +68,26 @@ The project follows a client-server architecture:
 Mobile application for end users
 Web-based admin panel for administrators
 Backend API service for handling requests and communication
----
+
 Installation & Setup
 Clone the Repository:
 git clone https://github.com/jasoncs38/Complaint-and-Feedback-Management-System-.git
----
-Backend Setup: ---
-cd backend ---
-pip install -r requirements.txt ---
-uvicorn main:app --reload ---
 
-Mobile App Setup: ---
-cd mobile ---
-flutter pub get ---
-flutter run ---
+Backend Setup: 
+cd backend 
+pip install -r requirements.txt 
+uvicorn main:app --reload 
 
-Admin Panel Setup: ---
-cd admin ---
-flutter pub get ---
-flutter run -d chrome ---
+Mobile App Setup: 
+cd mobile 
+flutter pub get 
+flutter run 
 
-License---
+Admin Panel Setup: 
+cd admin 
+flutter pub get 
+flutter run -d chrome 
+
+License
 
 This project was developed for educational and academic purposes.
