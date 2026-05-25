@@ -11,36 +11,36 @@ The system provides separate interfaces for users and administrators, enabling s
 ## Features
 
 ### User Side
-- User registration and login
-- Submit complaints and feedback
-- View complaint status
-- Receive notifications and updates
-- User profile management
+ User registration and login
+ Submit complaints and feedback
+ View complaint status
+ Receive notifications and updates
+ User profile management
 
 ### Admin Side
-- Secure admin dashboard
-- View all submitted complaints
-- Accept or reject complaints
-- Manage users and complaint records
-- Monitor complaint activities
+ Secure admin dashboard
+ View all submitted complaints
+ Accept or reject complaints
+ Manage users and complaint records
+ Monitor complaint activities
 
 ---
 
 ## Technologies Used
 
 ### Frontend
-- Flutter
-- Dart
+ Flutter
+ Dart
 
 ### Backend
-- Python
-- FastAPI
+ Python
+ FastAPI
 
 ### Tools & Services
-- Git & GitHub
-- Ngrok
-- Chrome Web Support
-- Android Emulator / Physical Android Device
+ Git & GitHub
+ Ngrok
+ Chrome Web Support
+ Android Emulator / Physical Android Device
 
 ---
 
@@ -61,26 +61,26 @@ The project follows a client-server architecture:
 Mobile application for end users
 Web-based admin panel for administrators
 Backend API service for handling requests and communication
-
+---
 Installation & Setup
 Clone the Repository:
 git clone https://github.com/jasoncs38/Complaint-and-Feedback-Management-System-.git
+---
+Backend Setup: ---
+cd backend ---
+pip install -r requirements.txt ---
+uvicorn main:app --reload ---
 
-Backend Setup
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
+Mobile App Setup: ---
+cd mobile ---
+flutter pub get ---
+flutter run ---
 
-Mobile App Setup
-cd mobile
-flutter pub get
-flutter run
+Admin Panel Setup: ---
+cd admin ---
+flutter pub get ---
+flutter run -d chrome ---
 
-Admin Panel Setup
-cd admin
-flutter pub get
-flutter run -d chrome
-
-License
+License---
 
 This project was developed for educational and academic purposes.
