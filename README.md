@@ -85,13 +85,3 @@ This project was developed for CSE 3rd year final projec on mobile computing and
 ├── mobile/
 │
 └── README.md
-# 📸 Screenshots
-
-## Login Screen
-![Login](screenshots/login.png)
-
-## Dashboard
-![Dashboard](screenshots/dashboard.png)
-
-## Admin Panel
-![Admin](screenshots/admin.png)
