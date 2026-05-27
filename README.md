@@ -85,3 +85,10 @@ This project was developed for CSE 3rd year final projec on mobile computing and
 ├── mobile/
 │
 └── README.md
+# 👨‍💻 Contributors
+
+1. Chernet Alene-----------------------------------------------ugr/34159/16 
+2. Bira Girma--------------------------------------------------ugr/34107/16 
+3. Tomas Chen--------------------------------------------------ugr/35515/16 
+4. Gurmesa T/mariyam-------------------------------------------ugr/34516/16 
+5. Kena Amanuel------------------------------------------------ugr/34730/16
